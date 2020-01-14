@@ -11,7 +11,7 @@
 
 Learning process:
 
-![alt text](Images/Learning LunarLander-v2.png)
+![alt text](Images/learninglunar.png)
 
 
 Smart agent in action:
@@ -27,7 +27,7 @@ Smart agent in action:
 
 Learning process:
 
-![alt text](Images/learning_Unity banana collector.png)
+![alt text](Images/learningbanana.png)
 
 
 ## Policy-Based Methods
