@@ -1,5 +1,6 @@
 # Deep-Reinforcement-Learning-Exercises
 
+![alt text](Images/value_bm.png)
 
 ## Value-Based Methods:
 
@@ -24,9 +25,6 @@ Learning process:
 
 ![alt text](Images/learninglunar.png)
 
-
-Smart agent in action:
-
 ![alt text](Images/LunarLander-v2.png)
 
 
@@ -40,5 +38,20 @@ Learning process:
 
 ![alt text](Images/learningbanana.png)
 
+![alt text](Images/banana.jpeg)
+
 
 ## Policy-Based Methods
+
+![alt text](Images/policy_bm.png)
+
+#### Cross-Entropy Method on [MountainCarContinuous v0](https://github.com/openai/gym/wiki/MountainCarContinuous-v0):
+
+Using the [cross entropy method](https://en.wikipedia.org/wiki/Cross-entropy_method) to optimize the weights of the policy network in order to maximize the reward, we will solve a continuious environment by directly estimating the policy.
+
+Learning process:
+
+![alt text](Images/cem.png)
+
+![alt text](Images/mountain.jpg)
+
