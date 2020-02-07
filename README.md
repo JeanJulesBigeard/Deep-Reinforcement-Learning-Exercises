@@ -2,7 +2,7 @@
 
 ![alt text](Images/value_bm.png)
 
-## Value-Based Methods:
+# Value-Based Methods:
 
 ![alt text](Images/dqn_algo.png)
 
@@ -43,12 +43,18 @@ Learning process:
 ![alt text](Images/banana.jpeg)
 
 
-## Policy-Based Methods
+# Policy-Based Methods
 
 ![alt text](Images/policy_bm.png)
 
 - With value-based methods, the agent uses its experience with the environment to maintain an estimate of the optimal action-value function. The optimal policy is then obtained from the optimal action-value function estimate.
 - Policy-based methods directly learn the optimal policy, without having to maintain a separate value function estimate.
+
+#### Why Policy-Based Methods?
+
+- Simplicity: Policy-based methods directly get to the problem at hand (estimating the optimal policy), without having to store a bunch of additional data (i.e., the action values) that may not be useful.
+- Stochastic policies: Unlike value-based methods, policy-based methods can learn true stochastic policies.
+- Continuous action spaces: Policy-based methods are well-suited for continuous action spaces.
 
 #### Policy function approximation: 
 
@@ -57,6 +63,16 @@ In deep reinforcement learning, it is common to represent the policy with a neur
 - If the environment has discrete actions, the output layer has a node for each possible action and contains the probability that the agent should select each possible action.
 
 The weights in this neural network are initially set to random values. Then, the agent updates the weights as it interacts with (and learns more about) the environment.
+
+### Poilicy Gradient Methods:
+
+The simplest way to work with Policy-Based methods.
+
+![alt text](Images/pol_bas.png)
+
+The principle:
+
+![alt text](Images/pol_grad.png)
 
 #### Hill Climbing on CartPole-v0:
 
@@ -96,8 +112,3 @@ Learning process:
 
 ![alt text](Images/mountain.jpg)
 
-#### Why Policy-Based Methods?
-
-- Simplicity: Policy-based methods directly get to the problem at hand (estimating the optimal policy), without having to store a bunch of additional data (i.e., the action values) that may not be useful.
-- Stochastic policies: Unlike value-based methods, policy-based methods can learn true stochastic policies.
-- Continuous action spaces: Policy-based methods are well-suited for continuous action spaces.
