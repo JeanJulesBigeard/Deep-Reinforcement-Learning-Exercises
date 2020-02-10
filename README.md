@@ -56,19 +56,13 @@ Learning process:
 - Stochastic policies: Unlike value-based methods, policy-based methods can learn true stochastic policies.
 - Continuous action spaces: Policy-based methods are well-suited for continuous action spaces.
 
-#### Policy function approximation: 
+### Policy function approximation: 
 
 In deep reinforcement learning, it is common to represent the policy with a neural network.
 - This network takes the environment state as input.
 - If the environment has discrete actions, the output layer has a node for each possible action and contains the probability that the agent should select each possible action.
 
 The weights in this neural network are initially set to random values. Then, the agent updates the weights as it interacts with (and learns more about) the environment.
-
-### Poilicy Gradient Methods:
-
-The simplest way to work with Policy-Based methods.
-
-![alt text](Images/pol_bas.png)
 
 The principle:
 
@@ -111,4 +105,28 @@ Learning process:
 ![alt text](Images/cem.png)
 
 ![alt text](Images/mountain.jpg)
+
+### Poilicy Gradient Methods:
+
+![alt text](Images/pol_bas.png)
+
+![alt text](Images/policygrad.png)
+
+The way we need to update weights in the policy gradient method can be compare with supervised learning, more details about this can be found on this famous [blogpost](http://karpathy.github.io/2016/05/31/rl/).
+
+![alt text](Images/sl_rl.png)
+
+#### Reinforce
+
+First, we use an environment with a discrete action space ([OpenAI Gym's CartPole environment](https://gym.openai.com/envs/CartPole-v0/)).
+
+![alt text](Images/solved.png)
+
+Let's now dive in the REINFORCE algorithm:
+
+![alt text](Images/summary.png)
+
+REINFORCE increases the probability of "good" actions and decreases the probability of "bad" actions.([source](https://openai.com/blog/evolution-strategies/))
+
+![alt text](Images/reinforce.png)
 
