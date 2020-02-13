@@ -116,7 +116,7 @@ The way we need to update weights in the policy gradient method can be compare w
 
 ![alt text](Images/sl_rl.png)
 
-#### Reinforce
+### Reinforce
 
 First, we use an environment with a discrete action space ([OpenAI Gym's CartPole environment](https://gym.openai.com/envs/CartPole-v0/)).
 
@@ -130,3 +130,12 @@ REINFORCE increases the probability of "good" actions and decreases the probabil
 
 ![alt text](Images/reinforce.png)
 
+![alt text](Images/beyond.png)
+
+![alt text](Images/noise.png)
+
+![alt text](Images/reward.png)
+
+#### How to have a better understanding of each action result than the global policy result:
+
+![alt text](Images/assignement.png)
