@@ -139,3 +139,44 @@ REINFORCE increases the probability of "good" actions and decreases the probabil
 #### How to have a better understanding of each action result than the global policy result:
 
 ![alt text](Images/assignement.png)
+
+#### Importance Sampling
+
+![alt text](Images/policy_update.png)
+
+![alt text](Images/importance_sampling.png)
+
+![alt text](Images/re_weight.png)
+
+### Proximal Policy Optimization (PPO)
+
+![alt text](Images/reweight_ppo.png)
+
+![alt text](Images/surrogate_fct.png)
+
+![alt text](Images/policy_cliff.png)
+
+![alt text](Images/clipped_surrogate.png)
+
+![alt text](Images/clip_surr_fct.png)
+
+![alt text](Images/clipped_surrfct_bis.png)
+
+#### Summary
+
+![alt text](Images/ppo_sum.png)
+
+### Solving Pong environment
+
+Preprocessing the image to speed up calculations.
+
+![alt text](Images/pongenv.png)
+
+#### Using REINFORCE
+The result:
+![alt text](Images/pong_reinforce.png)
+
+#### Using PPO
+The result:
+![alt text](Images/pong_ppo.png)
+
